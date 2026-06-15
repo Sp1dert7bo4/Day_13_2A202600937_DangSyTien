@@ -1,0 +1,156 @@
+{
+  "team": "2A202600937_DangSyTien",
+  "schema_version": 1,
+  "findings": [
+    {
+      "fault_class": "latency_spike",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-001-prv-001",
+          "req-prv-002-prv-002",
+          "req-prv-003-prv-003"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    },
+    {
+      "fault_class": "error_spike",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-001-prv-001",
+          "req-prv-002-prv-002",
+          "req-prv-003-prv-003"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    },
+    {
+      "fault_class": "pii_leak",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-020-prv-020",
+          "req-prv-025-prv-025",
+          "req-prv-038-prv-038"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    },
+    {
+      "fault_class": "infinite_loop",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-001-prv-001",
+          "req-prv-002-prv-002",
+          "req-prv-003-prv-003"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    },
+    {
+      "fault_class": "tool_failure",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-001-prv-001",
+          "req-prv-003-prv-003",
+          "req-prv-014-prv-014"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    },
+    {
+      "fault_class": "arithmetic_error",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-001-prv-001"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    },
+    {
+      "fault_class": "prompt_injection",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-001-prv-001"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    },
+    {
+      "fault_class": "fabrication",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-001-prv-001",
+          "req-prv-002-prv-002",
+          "req-prv-003-prv-003"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    },
+    {
+      "fault_class": "tool_overuse",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-001-prv-001",
+          "req-prv-002-prv-002",
+          "req-prv-003-prv-003"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    },
+    {
+      "fault_class": "cost_blowup",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-001-prv-001",
+          "req-prv-002-prv-002",
+          "req-prv-003-prv-003"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    },
+    {
+      "fault_class": "quality_drift",
+      "evidence": {
+        "metric": "...",
+        "observed": "...",
+        "trace_ids": [
+          "req-prv-001-prv-001",
+          "req-prv-002-prv-002",
+          "req-prv-003-prv-003"
+        ]
+      },
+      "root_cause": "...",
+      "suggested_fix": "..."
+    }
+  ]
+}
