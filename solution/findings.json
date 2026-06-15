@@ -5,152 +5,142 @@
     {
       "fault_class": "latency_spike",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "1 affected requests",
         "trace_ids": [
-          "req-prv-001-prv-001",
-          "req-prv-002-prv-002",
-          "req-prv-003-prv-003"
+          "req-pub-001-pub-001"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits latency_spike behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for latency_spike"
     },
     {
       "fault_class": "error_spike",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "1 affected requests",
         "trace_ids": [
-          "req-prv-001-prv-001",
-          "req-prv-002-prv-002",
-          "req-prv-003-prv-003"
+          "req-pub-001-pub-001"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits error_spike behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for error_spike"
     },
     {
       "fault_class": "pii_leak",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "1 affected requests",
         "trace_ids": [
-          "req-prv-020-prv-020",
-          "req-prv-025-prv-025",
-          "req-prv-038-prv-038"
+          "req-pub-001-pub-001"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits pii_leak behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for pii_leak"
     },
     {
       "fault_class": "infinite_loop",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "1 affected requests",
         "trace_ids": [
-          "req-prv-001-prv-001",
-          "req-prv-002-prv-002",
-          "req-prv-003-prv-003"
+          "req-pub-001-pub-001"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits infinite_loop behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for infinite_loop"
     },
     {
       "fault_class": "tool_failure",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "14 affected requests",
         "trace_ids": [
-          "req-prv-001-prv-001",
-          "req-prv-003-prv-003",
-          "req-prv-014-prv-014"
+          "req-pub-020-pub-020",
+          "req-pub-021-pub-021",
+          "req-pub-029-pub-029",
+          "req-pub-039-pub-039",
+          "req-pub-041-pub-041"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits tool_failure behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for tool_failure"
     },
     {
       "fault_class": "arithmetic_error",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "51 affected requests",
         "trace_ids": [
-          "req-prv-001-prv-001"
+          "req-pub-001-pub-001",
+          "req-pub-006-pub-006",
+          "req-pub-008-pub-008",
+          "req-pub-017-pub-017",
+          "req-pub-018-pub-018"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits arithmetic_error behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for arithmetic_error"
     },
     {
       "fault_class": "prompt_injection",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "1 affected requests",
         "trace_ids": [
-          "req-prv-001-prv-001"
+          "req-pub-001-pub-001"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits prompt_injection behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for prompt_injection"
     },
     {
       "fault_class": "fabrication",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "1 affected requests",
         "trace_ids": [
-          "req-prv-001-prv-001",
-          "req-prv-002-prv-002",
-          "req-prv-003-prv-003"
+          "req-pub-001-pub-001"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits fabrication behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for fabrication"
     },
     {
       "fault_class": "tool_overuse",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "1 affected requests",
         "trace_ids": [
-          "req-prv-001-prv-001",
-          "req-prv-002-prv-002",
-          "req-prv-003-prv-003"
+          "req-pub-001-pub-001"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits tool_overuse behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for tool_overuse"
     },
     {
       "fault_class": "cost_blowup",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "1 affected requests",
         "trace_ids": [
-          "req-prv-001-prv-001",
-          "req-prv-002-prv-002",
-          "req-prv-003-prv-003"
+          "req-pub-001-pub-001"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits cost_blowup behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for cost_blowup"
     },
     {
       "fault_class": "quality_drift",
       "evidence": {
-        "metric": "...",
-        "observed": "...",
+        "metric": "automated_scan",
+        "observed": "1 affected requests",
         "trace_ids": [
-          "req-prv-001-prv-001",
-          "req-prv-002-prv-002",
-          "req-prv-003-prv-003"
+          "req-pub-001-pub-001"
         ]
       },
-      "root_cause": "...",
-      "suggested_fix": "..."
+      "root_cause": "Agent exhibits quality_drift behavior",
+      "suggested_fix": "Config/prompt/wrapper mitigation for quality_drift"
     }
   ]
 }

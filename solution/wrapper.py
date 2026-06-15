@@ -37,6 +37,20 @@ def sanitize_question(question: str) -> str:
         return f"{prefix}{label}: [Sanitized note content]"
     return question
 
+def fix_total_format(answer: str) -> str:
+    # Chuẩn hóa dòng Tong cong: để bỏ dấu phẩy/chấm phân cách ngàn.
+    def clean_number(m):
+        num_str = m.group(1).replace(',', '').replace('.', '')
+        return f"Tong cong: {num_str} VND"
+    
+    answer = re.sub(
+        r'Tong\s*cong:\s*([\d.,]+)\s*VND',
+        clean_number,
+        answer,
+        flags=re.IGNORECASE
+    )
+    return answer
+
 def mitigate(call_next, question, config, context):
     qid = context.get("qid", "unknown")
     session_id = context.get("session_id", "unknown")
@@ -93,6 +107,9 @@ def mitigate(call_next, question, config, context):
                 "trace": [],
                 "meta": {}
             }
+            
+        if res.get("answer"):
+            res["answer"] = fix_total_format(res["answer"])
             
         # PII Redaction on response
         if config.get("redact_pii", True) and res.get("answer"):
